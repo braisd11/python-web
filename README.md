@@ -11,4 +11,4 @@ Curso Python Web de MoureDev
 
 ***
 
-Este curso elabora una página web con Python en su totalidad. Tanto la parte de frontend como la parte de backend se realiza con Python. Esto es posible gracias al framework de ***Reflex***, un framework que utiliza librerías como Tailwind o Chakra para la parte de frontend.
+Este curso elabora una página web con Python en su totalidad. Tanto la parte de frontend como la parte de backend se realiza con Python. Esto es posible gracias al framework de ***Reflex***, un framework que utiliza librerías como Tailwind o React para la parte de frontend.
