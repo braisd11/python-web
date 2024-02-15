@@ -2,51 +2,37 @@ import reflex as rx
 from link_bio.components.link_button import link_button
 from link_bio.components.title import title
 from link_bio.styles.styles import Size as Size
+import link_bio.constants as constant
 
 
 def links() -> rx.Component:
     return rx.vstack(
-        title("Comunidad"),
+        title("Enlaces de Contacto"),
         link_button(
-            "Twitch", 
-            "Directos de lunes a viernes",
-            "https://reflex.dev/docs/library/"
+            "LinkedIn", 
+            "Mi experiencia laboral",
+            constant.LINKEDIN_URL
         ),
         link_button(
-            "YouTube", 
-            "Tutoriales semanales",
-            "https://reflex.dev/docs/library/"
-        ),
-        link_button(
-            "YouTube (canal secundario)", 
-            "Tutoriales semanales",
-            "https://reflex.dev/docs/library/"
-        ),
-        link_button(
-            "Discord", 
-            "El chat de la comunidad",
-            "https://reflex.dev/docs/library/"
-        ),
-        title("Comunidad"),
-        link_button(
-            "Twitch", 
-            "Directos de lunes a viernes",
-            "https://reflex.dev/docs/library/"
-        ),
-        link_button(
-            "YouTube", 
-            "Tutoriales semanales",
-            "https://reflex.dev/docs/library/"
+            "GitHub", 
+            "Mis proyectos y repositorios",
+            constant.GITHUB_URL
         ),
         link_button(
             "YouTube (canal secundario)", 
             "Tutoriales semanales",
-            "https://reflex.dev/docs/library/"
+            constant.REFEX_URL
         ),
         link_button(
             "Discord", 
             "El chat de la comunidad",
-            "https://reflex.dev/docs/library/"
+            constant.REFEX_URL
+        ),
+        title("Contacto"),
+        link_button(
+            "Email", 
+            constant.EMAIL_URL,
+            f"mailto: {constant.EMAIL_URL}"
         ),
         width="100%",
         spacing=Size.MEDIUM.value

@@ -2,6 +2,8 @@ import reflex as rx
 from link_bio.components.link_icon import link_icon
 from link_bio.components.info_text import info_text
 from link_bio.styles.styles import Size as Size
+from link_bio.styles.colors import TextColor as TextColor
+import link_bio.constants as const
 
 
 
@@ -12,16 +14,20 @@ def header() -> rx.Component:
             rx.vstack(
                 rx.heading(
                     "Brais Díaz",
-                    size="lg"
+                    size="lg",
+                    color=TextColor.HEADER.value
                 ),
                 rx.text(
                     "@braisdr11",
-                    padding_top = "0px !important"
+                    padding_top = Size.ZERO.value,
+                    color=TextColor.BODY.value
                 ),
                 rx.hstack(
-                    link_icon("https://x.com"),
-                    link_icon("https://x.com"),
-                    link_icon("https://x.com")
+                    link_icon(const.X_URL),
+                    link_icon(const.X_URL),
+                    link_icon(const.X_URL),
+                    link_icon(const.X_URL),
+                    link_icon(const.X_URL)
                 ),
                 align_items="start"
             ),
@@ -29,18 +35,22 @@ def header() -> rx.Component:
         ),
 
         rx.flex(
-            info_text("+13", "años de experiencia"),
+            info_text("+1", "años de experiencia"),
             rx.spacer(),
-            info_text("+13", "años de experiencia"),
+            info_text("+1", "años de experiencia"),
             rx.spacer(),
-            info_text("+13", "años de experiencia"),
+            info_text("+1", "años de experiencia"),
             width="100%"
         ),
 
-        rx.text("""Soy ingeniero de software desde hace más de 12 años.
-                Actualmente trabajo como freelance full-stack developer iOS y Android.
-                Además creo contenido formativo sobre programación y tecnología en redes.
-                Aquí podrás encontrar todos mis enlaces de interés. ¡Bienvenida!)"""),
-        spacing= Size.DEFAULT.value,
+        rx.text(
+            """Soy ingeniero de software backend.
+            Estudié el ciclo superior de DAM en el IES de Teis en Vigo.
+            En el ciclo aprendí Java, Python con respecto a lenguajes de programación.
+            Sobre Bases de Datos aprendí MySql.
+            También aprendí HTML, CSS y Android Studio entre otras cosas.""",
+            color = TextColor.BODY.value
+        ),
+        spacing= Size.BIG.value,
         align_items= "start"
     )
