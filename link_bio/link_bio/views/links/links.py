@@ -20,18 +20,18 @@ def links() -> rx.Component:
             constant.GITHUB_ICO,
             constant.GITHUB_URL
         ),
-        link_button(
-            "YouTube (canal secundario)", 
-            "Tutoriales semanales",
-            constant.YOUTUBE_ICO,
-            constant.REFLEX_URL
-        ),
-        link_button(
-            "Discord", 
-            "El chat de la comunidad",
-            constant.DISCORD_ICO,
-            constant.REFLEX_URL
-        ),
+        # link_button(
+        #     "YouTube (canal secundario)", 
+        #     "Tutoriales semanales",
+        #     constant.YOUTUBE_ICO,
+        #     constant.REFLEX_URL
+        # ),
+        # link_button(
+        #     "Discord", 
+        #     "El chat de la comunidad",
+        #     constant.DISCORD_ICO,
+        #     constant.REFLEX_URL
+        # ), 
         title("Contacto y Enlaces de Interés"),
         link_button(
             "Email", 
