@@ -15,7 +15,7 @@ def footer() -> rx.Component:
         ),
 
         rx.chakra.link(
-            f"2014-{datetime.date.today().year} MOUREDEV BY BRAIS MOURE V3.",
+            f"2022-{datetime.date.today().year} Brais Díaz.",
             href=const.REFLEX_URL,
             is_external=True,
             font_size= Size.MEDIUM.value
